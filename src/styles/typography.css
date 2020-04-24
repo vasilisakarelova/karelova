@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'New Rail Alphabet Bold';
+    src: url('./fonts/NewRailAlphabetBold.woff') format('woff'),
+        url('./fonts/NewRailAlphabetBold.woff2') format('woff2'),
+        url('./fonts/NewRailAlphabetBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'New Rail Alphabet Medium';
+    src: url('./fonts/NewRailAlphabetMedium.woff') format('woff'),
+        url('./fonts/NewRailAlphabetMedium.woff2') format('woff2'),
+        url('./fonts/NewRailAlphabetMedium.ttf') format('truetype');
+}
+
+a {
+  color: rgba(0, 0, 0, .44);
+  text-decoration: none;
+}

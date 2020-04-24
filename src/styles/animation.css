@@ -1,0 +1,22 @@
+.is-animating {
+  position: absolute;
+  width: calc(100% - 40px);
+  left: 20px;
+  top: 43.5px;
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    width: calc(100% - 80px);
+    left: 40px;
+    top: 52px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: calc(100% - 120px);
+    left: 60px;
+    top: 77px;
+  }
+
+  &:nth-of-type(2) {
+    background: #fff;
+  }
+}

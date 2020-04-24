@@ -1,0 +1,191 @@
+.projects-wrap {
+  position: relative;
+  grid-column: span 4;
+  padding: 20px 0 45px;
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    padding: 45px 0 130px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    grid-column: span 5;
+    padding: 80px 0 130px;
+  }
+}
+
+.project-single {
+  &-wrap {
+    padding-bottom: 20px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(10%, 1fr));
+      grid-column-gap: 20px;
+      justify-content: flex-start;
+      padding-bottom: 35px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(10%, 1fr));
+      grid-column-gap: 30px;
+      justify-content: flex-start;
+      padding-bottom: 35px;
+    }
+  }
+
+  &--title {
+    position: relative;
+    display: block;
+    font-size: 22px;
+    line-height: 39px;
+
+    span {
+      font-family: 'New Rail Alphabet Medium';
+      font-size: 12px;
+      line-height: 19px;
+      padding-left: 8px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      grid-column: 2/5;
+      font-size: 33px;
+      line-height: 39px;
+      padding-bottom: 5px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      grid-column: 2/5;
+      font-size: 43px;
+      line-height: 46px;
+      padding-bottom: 7px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &--screenshots-outer {
+    position: relative;
+    overflow: hidden;
+    width: calc(100% + 40px);
+    left: -20px;
+    padding-bottom: 8px;
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      grid-column: 2/5;
+      width: calc(100% + 40px);
+      left: 0;
+      padding-bottom: 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+      grid-column: 2/6;
+      width: calc(100% + 60px);
+      left: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &--screenshots-wrap {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: -100px;
+  }
+
+  &--screenshots-scroll {
+    position: relative;
+    display: flex;
+    overflow: scroll;
+  }
+
+  &--screenshots {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 100px;
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      padding: 0 40px 100px 0;
+    }
+
+    @media screen and (min-width: 1440px) {
+      padding: 0 60px 100px 0;
+    }
+  }
+
+  &--screenshots-single {
+    position: relative;
+    display: block;
+    width: 200px;
+    margin-right: 20px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      width: 300px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 165px;
+    }
+  }
+
+  &--screenshots-single-inner {
+    position: relative;
+    display: block;
+    padding-top: 59.283%;
+    width: 100%;
+    background: #fafafa;
+
+    img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .2s linear;
+    }
+  }
+
+  &--info {
+    font-family: 'New Rail Alphabet Medium';
+    font-size: 12px;
+    line-height: 19px;
+    color: rgba(0,0,0,.44);
+
+    span, a {
+      color: rgba(0,0,0,1);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    @media screen and (min-width: 1440px) {
+      grid-column: 1;
+      grid-row: 2;
+      font-size: 17px;
+      line-height: 26px;
+    }
+  }
+
+  &--info-collab {
+    color: rgba(0,0,0,1);
+    padding-left: 10px;
+  }
+}

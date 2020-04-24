@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'New Rail Alphabet Bold';
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+.underline {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  left: 50%;
+  right: 50%;
+  background-color: #000;
+  -webkit-transform: translateX(-50%) translateZ(0);
+  transform: translateX(-50%) translateZ(0);
+  transition: width .26s linear;
+}

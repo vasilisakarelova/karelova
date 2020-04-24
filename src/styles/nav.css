@@ -1,0 +1,78 @@
+.nav-wrap {
+  position: relative;
+  display: block;
+  grid-column: span 4;
+  padding-top: 11.5px;
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    padding-top: 20px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-top: 45px;
+    grid-column: span 5;
+  }
+}
+
+.nav-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transition: opacity .4s linear;
+
+  a {
+    position: relative;
+    display: block;
+    font-family: 'New Rail Alphabet Bold';
+    font-size: 22px;
+    line-height: 32px;
+    color: #000;
+
+    @media screen and (min-width: 768px) and (max-width: 1439px) {
+      font-size: 33px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 43px;
+    }
+
+    &.active:before,
+    &.active:after {
+      position: absolute;
+      display: block;
+      top: 0;
+    }
+
+    &.active:before {
+      content: '{';
+      left: -10px;
+
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        left: -15px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        left: -20px;
+      }
+    }
+
+    &.active:after {
+      content: '}';
+      right: -10px;
+
+      @media screen and (min-width: 768px) and (max-width: 1439px) {
+        right: -15px;
+      }
+
+      @media screen and (min-width: 1440px) {
+        right: -20px;
+      }
+    }
+  }
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
